@@ -28,7 +28,7 @@
     <div class="card-body register-card-body">
       <p class="login-box-msg">Register a new membership</p>
 
-      <form action="<?php echo BASE_URL?>estudiante/save" method="post">
+      <form action="<?php echo BASE_URL?>estudiante/registro" method="post">
         <div class="input-group mb-3">
           <input type="text" class="form-control" name="nombre" placeholder="Nombre">
           <div class="input-group-append">
@@ -80,7 +80,7 @@
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
-              <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+              <input type="checkbox" id="agreeTerms" name="terms" value="YES">
               <label for="agreeTerms">
                I agree to the <a href="#">terms</a>
               </label>

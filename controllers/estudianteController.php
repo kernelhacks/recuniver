@@ -20,19 +20,16 @@ class estudianteController
   {
     require 'views/estudiante/table.view.php';
   }
-  
-  function registro()
-  {
-    require 'views/estudiante/register.view.php';
-  }
-  
+    
   function login()
   {
       require 'views/estudiante/login.view.php';
   }
   
-  function save()
+  function registro()
   {
+      require 'views/estudiante/register.view.php';
+      
       if (!empty($_POST)) 
       {
         $database = new Database();
@@ -44,8 +41,14 @@ class estudianteController
         $estudiante->setEmail($_POST['email']);
         $estudiante->setUsername($_POST['username']);
         $estudiante->setPassword($_POST['password']);
+        $estudiante->setContrato($_POST['terms']);
         
-        $estudiante->save();
+        if($estudiante->save())
+        {
+            return true;
+        }else{
+            return false;
+        }
       }
       
       

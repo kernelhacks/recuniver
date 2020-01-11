@@ -16,15 +16,24 @@ class estudianteModel extends Basemodel
                     apellido,
                     email,
                     username,
-                    password) 
+                    password,
+                    contrato) 
                 VALUES (
                     '{$this->getNombre()}',
                     '{$this->getApellido()}',
                     '{$this->getEmail()}',
                     '{$this->getUsername()}',
-                    '{$this->getPassword()}')";
+                    '{$this->getPassword()}',
+                    '{$this->getContrato()}')";
         
-        $this->conn->query($sql);
+        if($this->conn->query($sql))
+        {
+            return true;            
+        }else{
+            return false;
+        }
+        
+        
     }
 }
 ?>

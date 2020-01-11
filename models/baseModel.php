@@ -16,7 +16,8 @@ abstract class Basemodel
     private $bio;
     private $username;
     private $password;
-    
+    private $contrato;
+        
     public function getNombre()
     {
         return $this->nombre;
@@ -90,6 +91,10 @@ abstract class Basemodel
     public function getPassword()
     {
         return $this->password;
+    }
+    
+    public function getContrato(){
+        return $this->contrato;
     }
 
     public function setNombre($nombre)
@@ -165,5 +170,10 @@ abstract class Basemodel
     public function setPassword($password)
     {
         $this->password = $password;
+    }
+    
+    public function setContrato($contrato)
+    {
+        $this->contrato = $contrato;
     }
 }?>
