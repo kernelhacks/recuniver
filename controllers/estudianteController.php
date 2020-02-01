@@ -8,17 +8,32 @@ class estudianteController
 {  
   function dashboard()
   {
-    require 'views/estudiante/dashboard.view.php';
+      $page = 'dashboard';
+      require 'views/layout/includes/header.php';
+      require 'views/layout/navbar.view.php';
+      require 'views/layout/sidebar.view.php';
+      require 'views/estudiante/dashboard.view.php';
+      require 'views/layout/includes/footer.php';
   }
   
   function profile()
   {
-    require 'views/estudiante/profile.view.php';
+      $page = 'profile';
+      require 'views/layout/includes/header.php';
+      require 'views/layout/navbar.view.php';
+      require 'views/layout/sidebar.view.php';
+      require 'views/estudiante/profile.view.php';
+      require 'views/layout/includes/footer.php';
   }
   
   function table()
   {
-    require 'views/estudiante/table.view.php';
+      $page = 'table';
+      require 'views/layout/includes/header.php';
+      require 'views/layout/navbar.view.php';
+      require 'views/layout/sidebar.view.php';
+      require 'views/estudiante/table.view.php';
+      require 'views/layout/includes/footer.php';
   }
     
   function login()
