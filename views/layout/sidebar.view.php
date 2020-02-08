@@ -23,20 +23,20 @@
                 <!-- Add icons to the links using the .nav-icon class
        with font-awesome or any other icon font library -->
                 <li>
-                    <a href="dashboard" class="nav-link <?php //$activePage = pageName() == 'dashbaord'?:'active'; echo $activePage; ?> active">
+                    <a href="dashboard" class="nav-link <?php if ($page == 'dashboard') echo 'active'; ?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
                         </p>
                     </a>
                 </li>
-                <li class="nav-item"><a href="profile" class="nav-link <?php //$activePage = pageName() == 'profile'?:'active'; echo $activePage?>"> <i class="nav-icon fas fa-user"></i>
+                <li class="nav-item"><a href="profile" class="nav-link <?php if ($page == 'profile') echo 'active'; ?>"> <i class="nav-icon fas fa-user"></i>
                         <p>
                             profile
                         </p>
                     </a></li>
 
-                <li class="nav-item has-treeview"><a href="table" class="nav-link <?php //$activePage = pageName() == 'table'?:'active'; echo $activePage?>"> <i class="nav-icon fas fa-list"></i>
+                <li class="nav-item has-treeview"><a href="table" class="nav-link <?php if ($page == 'table') echo 'active'; ?>"> <i class="nav-icon fas fa-list"></i>
                         <p>
                             Ofertas de Empleos
                         </p>
