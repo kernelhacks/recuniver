@@ -33,8 +33,6 @@ class estudianteModel extends Basemodel
         }else{
             return false;
         }
-        
-        
     }
 }
 ?>
