@@ -15,7 +15,7 @@ if(isset($_GET['controller']))
     
     $nombre_controlador = DEFAULT_CONTROLLER; //Controlador por defecto 
 }
-else{
+else {
 	$error = "La pagina que buscas no existe"; //Muestras error si el request no existe
 	exit();
 }
