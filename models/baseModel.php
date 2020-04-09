@@ -176,4 +176,5 @@ abstract class Basemodel
     {
         $this->contrato = $contrato;
     }
-}?>
+}
+?>
