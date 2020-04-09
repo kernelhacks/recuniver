@@ -1,3 +1,6 @@
+        <?php require 'views/layout/includes/header.php'; ?>
+        <?php require 'views/layout/navbar.view.php'; ?>
+		<?php require 'views/layout/sidebar.view.php'; ?>
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
@@ -32,11 +35,11 @@
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-
-                                            <th>Area de negocio</th>
+                                        	<th>Empresa</th>
+                                            <th>Area</th>
                                             <th>Puesto</th>
                                             <th>Descripcion del puestos</th>
-                                            <th>Periodo</th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -153,6 +156,13 @@
                                             <td>1.8</td>
                                             <td>A</td>
                                         </tr>
+                                        <tr>
+
+                                            <td>Netscape Navigator 9</td>
+                                            <td>Win 98+ / OSX.2+</td>
+                                            <td>1.8</td>
+                                            <td>A</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -167,3 +177,4 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
+        <?php require 'views/layout/includes/footer.php'; ?>

@@ -1,4 +1,6 @@
-		
+		<?php require 'views/layout/includes/header.php'; ?>
+        <?php require 'views/layout/navbar.view.php'; ?>
+		<?php require 'views/layout/sidebar.view.php'; ?>
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
@@ -292,3 +294,4 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
+        <?php require 'views/layout/includes/footer.php'; ?>
