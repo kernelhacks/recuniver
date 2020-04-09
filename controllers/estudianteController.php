@@ -4,46 +4,47 @@
  */
 require 'config/database.php';
 require_once 'models/estudianteModel.php';
+require_once 'views/estudiante/estudianteViews.php';
+
 class estudianteController
 {  
   function dashboard()
-  {
-      $page = 'dashboard';
-      require 'views/layout/includes/header.php';
-      require 'views/layout/navbar.view.php';
-      require 'views/layout/sidebar.view.php';
-      require 'views/estudiante/dashboard.view.php';
-      require 'views/layout/includes/footer.php';
+  {      
+      //require 'views/estudiante/dashboard.view.php';
+      $view = new EstudinateViews('dashboard');
   }
   
   function profile()
   {
       $page = 'profile';
-      require 'views/layout/includes/header.php';
-      require 'views/layout/navbar.view.php';
-      require 'views/layout/sidebar.view.php';
-      require 'views/estudiante/profile.view.php';
-      require 'views/layout/includes/footer.php';
+      $view = new EstudinateViews('profile');
+//       require 'views/layout/includes/header.php';
+//       require 'views/layout/navbar.view.php';
+//       require 'views/layout/sidebar.view.php';
+//       require 'views/estudiante/profile.view.php';
+//       require 'views/layout/includes/footer.php';
+
   }
   
   function table()
   {
       $page = 'table';
-      require 'views/layout/includes/header.php';
-      require 'views/layout/navbar.view.php';
-      require 'views/layout/sidebar.view.php';
-      require 'views/estudiante/table.view.php';
-      require 'views/layout/includes/footer.php';
+      $view = new EstudinateViews('table');
+//       require 'views/layout/includes/header.php';
+//       require 'views/layout/navbar.view.php';
+//       require 'views/layout/sidebar.view.php';
+//       require 'views/estudiante/table.view.php';
+//       require 'views/layout/includes/footer.php';
   }
     
   function login()
   {
-      require 'views/estudiante/login.view.php';
+      require 'views/layout/login.view.php';
   }
   
   function registro()
   {
-      require 'views/estudiante/register.view.php';
+      require 'views/layout/register.view.php';
       
       if (!empty($_POST)) 
       {
@@ -65,8 +66,6 @@ class estudianteController
             return false;
         }
       }
-      
-      
   }
 }
 
