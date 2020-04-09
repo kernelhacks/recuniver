@@ -1,5 +1,6 @@
 <?php
-class Database {
+class Database 
+{
     // specify your own database credentials
     private $host = "localhost";
     private $db_name = "recuniver";
@@ -8,7 +9,8 @@ class Database {
     private $conn;
     
     // get the database connection
-    public function getConnection(){
+    public function getConnection()
+    {
         
         $this->conn = null;
         
